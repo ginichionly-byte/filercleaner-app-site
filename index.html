@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FilerCleaner — macOS file cleaner</title>
+  <meta name="description" content="FilerCleanerは、ユーザーが選択したフォルダを確認しながら整理するmacOSアプリです。">
+  <style>
+    :root { color-scheme: light dark; --bg:#101412; --panel:#18201d; --text:#edf5f0; --muted:#b8c8c0; --accent:#78d2b3; }
+    * { box-sizing:border-box; } body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; background:var(--bg); color:var(--text); line-height:1.75; }
+    main { max-width:860px; margin:0 auto; padding:64px 24px 80px; } .eyebrow { color:var(--accent); letter-spacing:.08em; font-size:.85rem; }
+    h1 { font-size:clamp(2.3rem,7vw,4.4rem); line-height:1.1; margin:.3em 0 .25em; } h2 { margin-top:2.4em; line-height:1.25; }
+    p, li { color:var(--muted); } a { color:var(--accent); } .lead { font-size:1.2rem; max-width:720px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin:32px 0; }
+    .card { background:var(--panel); border:1px solid #2b3b34; border-radius:16px; padding:20px; } .card h3 { margin-top:0; color:var(--text); }
+    nav { display:flex; flex-wrap:wrap; gap:18px; margin-top:30px; } footer { border-top:1px solid #2b3b34; margin-top:60px; padding-top:20px; font-size:.9rem; }
+  </style>
+</head>
+<body><main>
+  <div class="eyebrow">PRISMFC · macOS</div><h1>FilerCleaner</h1>
+  <p class="lead">選んだフォルダを、理由と安全度を確認しながら整理するファイルクリーナーです。</p>
+  <div class="grid">
+    <section class="card"><h3>対象を選ぶ</h3><p>Store Editionは、ユーザーがOpenパネルで選択したフォルダだけを対象にします。</p></section>
+    <section class="card"><h3>先に確認する</h3><p>サイズ、役割、再生成方法、安全度、削除経路を削除前にレビューします。</p></section>
+    <section class="card"><h3>Trashを基本にする</h3><p>通常の削除は可能な範囲でmacOSのTrashへ移動します。ゴミ箱を空にする操作は別確認です。</p></section>
+  </div>
+  <h2>開発アーティファクトの監査</h2><p>Xcodeのbuild・DerivedData・compiler cache、archive・dSYM、Core MLモデル、Simulator内のアプリデータを、容量だけでなく役割・所有者・削除経路と一緒に確認できます。起動中のSimulator内部やアプリ自身のruntimeなど、直接削除すべきでない対象は安全側に拒否します。</p>
+  <h2>大切な注意</h2><p>本アプリはバックアップや復旧サービスではありません。重要なデータをバックアップし、対象を確認してから操作してください。候補表示は「不要」や「必ず安全」を意味しません。</p>
+  <nav><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約・EULA</a><a href="support.html">サポート</a></nav>
+  <footer>運営者: Ginichi Kinjoh（個人開発者） · © 2026 Ginichi Kinjoh</footer>
+</main></body></html>
